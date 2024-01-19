@@ -1,0 +1,156 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "PreEntrega1",
+    "dateExported": "2024-01-19T00:29:47.210Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "85deba89-b951-41e1-940a-644d57375199",
+            "name": "Products",
+            "containerId": "",
+            "created": "2024-01-18T14:26:14.043Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "a12f0c49-39ef-4c13-8f93-952332e1afc0",
+            "name": "Carts",
+            "containerId": "",
+            "created": "2024-01-18T14:27:13.527Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "0e0dda31-0259-47dd-840b-9cad055a0fe9",
+            "colId": "e7a2ae8e-2379-4ad6-a10f-521615c2add7",
+            "containerId": "a12f0c49-39ef-4c13-8f93-952332e1afc0",
+            "name": "GET_PRODUCTS_BY_CART_ID",
+            "url": "http://localhost:8080/api/carts/d797c755d71a40418661bc0cf5e5d4de",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-18T13:17:49.305Z",
+            "modified": "2024-01-18T14:38:07.307Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3894a547-74db-48a2-b31a-71fa7f6676db",
+            "colId": "e7a2ae8e-2379-4ad6-a10f-521615c2add7",
+            "containerId": "85deba89-b951-41e1-940a-644d57375199",
+            "name": "GET_ALL_PRODUCTS",
+            "url": "http://localhost:8080/api/products/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-18T14:16:54.421Z",
+            "modified": "2024-01-18T14:29:37.945Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a73d53af-8c18-42a7-a9ae-ccbf8df93815",
+            "colId": "e7a2ae8e-2379-4ad6-a10f-521615c2add7",
+            "containerId": "85deba89-b951-41e1-940a-644d57375199",
+            "name": "GET_PRODUCT_BY_ID",
+            "url": "http://localhost:8080/api/products/4c0675f38a6c2f3270b0871bce00054e",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-01-18T14:17:25.186Z",
+            "modified": "2024-01-18T14:34:35.733Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a7d5c160-5c16-4304-a0fe-b950114e2f64",
+            "colId": "e7a2ae8e-2379-4ad6-a10f-521615c2add7",
+            "containerId": "85deba89-b951-41e1-940a-644d57375199",
+            "name": "ADD_PRODUCT",
+            "url": "http://localhost:8080/api/products/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-18T14:19:45.130Z",
+            "modified": "2024-01-19T00:25:44.075Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Chocolate\",\n  \"description\": \"Negro\",\n  \"price\": 2800,\n  \"stock\": 20,\n  \"code\": \"CH123\",\n  \"category\": \"Food\",\n  \"thumbnail\": []\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "be4da293-7f47-4a4e-9191-183d5550d987",
+            "colId": "e7a2ae8e-2379-4ad6-a10f-521615c2add7",
+            "containerId": "85deba89-b951-41e1-940a-644d57375199",
+            "name": "UPDATE_PRODUCT",
+            "url": "http://localhost:8080/api/products/4c0675f38a6c2f3270b0871bce00054e",
+            "method": "PUT",
+            "sortNum": 25000,
+            "created": "2024-01-18T14:25:39.617Z",
+            "modified": "2024-01-18T14:35:05.205Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Lentejas\",\n  \"description\": \"Ricas\",\n  \"price\": 1500,\n  \"stock\": 15,\n  \"code\": \"L1234\",\n  \"category\": \"Food\",\n  \"status\": false,\n  \"thumbnail\": []\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0bea6e27-1a59-435a-a6b1-1463aad43851",
+            "colId": "e7a2ae8e-2379-4ad6-a10f-521615c2add7",
+            "containerId": "85deba89-b951-41e1-940a-644d57375199",
+            "name": "DELETE_PRODUCT",
+            "url": "http://localhost:8080/api/products/4c0675f38a6c2f3270b0871bce00054e",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-01-18T14:24:43.224Z",
+            "modified": "2024-01-18T14:35:18.768Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "31dd0afe-9542-407e-ad08-79b654aba53e",
+            "colId": "e7a2ae8e-2379-4ad6-a10f-521615c2add7",
+            "containerId": "a12f0c49-39ef-4c13-8f93-952332e1afc0",
+            "name": "ADD_CART",
+            "url": "http://localhost:8080/api/carts/",
+            "method": "POST",
+            "sortNum": 75000,
+            "created": "2024-01-18T14:28:01.829Z",
+            "modified": "2024-01-18T14:37:32.445Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"products\": \n    [\n      {\n        \"id\": \"314dde4f50620753e2e88600cd50d0e7\",\n        \"quantity\": 2\n      },\n      {\n        \"id\": \"f6ba5c611ba51353a70473402de3c4ac\",\n        \"quantity\": 5\n      }\n    ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a289f293-52a8-44fa-96ef-853b09882739",
+            "colId": "e7a2ae8e-2379-4ad6-a10f-521615c2add7",
+            "containerId": "a12f0c49-39ef-4c13-8f93-952332e1afc0",
+            "name": "ADD_PRODUCT_TO_CART_ID",
+            "url": "http://localhost:8080/api/carts/d797c755d71a40418661bc0cf5e5d4de/product/e7d04fd10757b0c142627c73bf0303ed",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-01-18T14:30:31.707Z",
+            "modified": "2024-01-18T14:41:42.832Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"quantity\": 2\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
